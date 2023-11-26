@@ -1,0 +1,56 @@
+{
+  "Osiedle Zawadzkiego": {
+    "Szafera": "1"
+  },
+  "Szafera": {
+    "Arena Szczecin": "1"
+  },
+  "Arena Szczecin": {
+    "Zawadzkiego": "1"
+  },
+  "Zawadzkiego": {
+    "Zawadzkiego Ko\u015bci\u00f3\u0142": "1"
+  },
+  "Zawadzkiego ko\u015bci\u00f3\u0142": {
+    "Klonowica Zajezdnia": "2"
+  },
+  "Klonowica Zajezdnia": {
+    "Wernyhory": "1"
+  },
+  "Wernyhory": {
+    "Ch\u0142opickiego": "2"
+  },
+  "Ch\u0142opickiego": {
+    "Wita Stwosza": "1"
+  },
+  "Wita Stwosza": {
+    "Osiedle Kaliny": "2"
+  },
+  "Osiedle Kaliny": {
+    "Witkiewicza Szko\u0142a": "1"
+  },
+  "Witkiewicza Szko\u0142a": {
+    "Osiedle Przyja\u017ani": "1"
+  },
+  "Osiedle Przyja\u017ani": {
+    "26 kwietnia": "2"
+  },
+  "26 kwietnia": {
+    "Turzyn Dworzec": "2"
+  },
+  "Turzyn Dworzec": {
+    "Plac Ko\u015bciuszki": "4"
+  },
+  "Plac Ko\u015bciuszku": {
+    "Plac Zwyci\u0119stwa": "3"
+  },
+  "Plac Zwyci\u0119stwa": {
+    "Brama Portowa": "2"
+  },
+  "Brama Portowa": {
+    "Wyszy\u0144skiego": "1"
+  },
+  "Wyszy\u0144skiego": {
+    "Dworzec G\u0142\u00f3wny": "3"
+  }
+}
