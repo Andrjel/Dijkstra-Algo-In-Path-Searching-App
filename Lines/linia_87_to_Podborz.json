@@ -1,0 +1,56 @@
+{
+    "Dworzec G\u0142\u00f3wny (Owocowa)": {
+        "Plac Tobrucki": "1"
+    },
+    "Plac Tobrucki": {
+        "Brama Portowa": "3"
+    },
+    "Brama Portowa": {
+        "Plac Lotnik\u00f3w": "4"
+    },
+    "Plac Lotnik\u00f3w": {
+        "Plac Grunwaldzki": "3"
+    },
+    "Plac Grunwaldzki": {
+        "Odrow\u0105\u017ca": "2"
+    },
+    "Odrow\u0105\u017ca": {
+        "W\u0105ska Floating Arena": "1"
+    },
+    "W\u0105ska Floating Arena": {
+        "Ko\u0142\u0142\u0105taja": "2"
+    },
+    "Ko\u0142\u0142\u0105taja": {
+        "Niemcewicza": "2"
+    },
+    "Niemcewicza": {
+        "Dworzec Niebuszewo": "2"
+    },
+    "Dworzec Niebuszewo": {
+        "Krasi\u0144skiego Wiadukt": "3"
+    },
+    "Krasi\u0144skiego Wiadukt": {
+        "\u0141ab\u0119dzia": "1"
+    },
+    "\u0141ab\u0119dzia": {
+        "Du\u0144ska": "2"
+    },
+    "Du\u0144ska": {
+        "Z\u0142otowska": "1"
+    },
+    "Z\u0142otowska": {
+        "Wapienna": "1"
+    },
+    "Wapienna": {
+        "Warszewo Ko\u015bci\u00f3\u0142": "1"
+    },
+    "Warszewo Ko\u015bci\u00f3\u0142": {
+        "Podb\u00f3rza\u0144ska Ogrody": "2"
+    },
+    "Podb\u00f3rza\u0144ska Ogrody": {
+        "Morenowa": "1"
+    },
+    "Morenowa": {
+        "Podb\u00f3rz": "1"
+    }
+}

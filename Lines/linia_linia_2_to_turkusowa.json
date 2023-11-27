@@ -1,0 +1,89 @@
+{
+    "Osiedle Zawadzkiego": {
+        "Szafera": "1"
+    },
+    "Szafera": {
+        "Arena Szczecin": "1"
+    },
+    "Arena Szczecin": {
+        "Rondo Olszewskiego": "1"
+    },
+    "Rondo Olszewskiego": {
+        "Mi\u0119dzyparkowa ": "1"
+    },
+    "Mi\u0119dzyparkowa ": {
+        "Stadion \u201eArkonia\u201d": "0"
+    },
+    "Stadion \u201eArkonia\u201d": {
+        "Las Arko\u0144ski": "1"
+    },
+    "Las Arko\u0144ski": {
+        "Wojciechowskiego": "1"
+    },
+    "Wojciechowskiego": {
+        "Arko\u0144ska Szpital": "1"
+    },
+    "Arko\u0144ska Szpital": {
+        "Wszystkich \u015awi\u0119tych": "1"
+    },
+    "Wszystkich \u015awi\u0119tych": {
+        "Niemierzy\u0144ska Technopark": "1"
+    },
+    "Niemierzy\u0144ska Technopark": {
+        "Muzeum Techniki": "1"
+    },
+    "Muzeum Techniki": {
+        "Krasi\u0144skiego": "2"
+    },
+    "Krasi\u0144skiego": {
+        "Ko\u0142\u0142\u0105taja": "2"
+    },
+    "Ko\u0142\u0142\u0105taja": {
+        "Lubomirskiego": "1"
+    },
+    "Lubomirskiego": {
+        "Plac Witosa": "1"
+    },
+    "Plac Witosa": {
+        "Rayskiego": "2"
+    },
+    "Rayskiego": {
+        "Plac Rod\u0142a": "2"
+    },
+    "Plac Rod\u0142a": {
+        "Plac \u017bo\u0142nierza Polskiego": "2"
+    },
+    "Plac \u017bo\u0142nierza Polskiego": {
+        "Brama Portowa": "2"
+    },
+    "Brama Portowa": {
+        "Wyszy\u0144skiego": "3"
+    },
+    "Wyszy\u0144skiego": {
+        "Celna": "1"
+    },
+    "Celna": {
+        "Energetyk\u00f3w": "1"
+    },
+    "Energetyk\u00f3w": {
+        "Port Centralny": "2"
+    },
+    "Port Centralny": {
+        "Parnica": "2"
+    },
+    "Parnica": {
+        "Merkatora": "2"
+    },
+    "Merkatora": {
+        "Basen G\u00f3rniczy": "1"
+    },
+    "Basen G\u00f3rniczy": {
+        "Hangarowa": "4"
+    },
+    "Hangarowa": {
+        "Ja\u015bminowa ZUS": "2"
+    },
+    "Ja\u015bminowa ZUS": {
+        "Turkusowa": "1"
+    }
+}

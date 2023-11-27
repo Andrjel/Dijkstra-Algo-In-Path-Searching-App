@@ -13,6 +13,9 @@ class LineMap:
     def get_vertex(self, name: str) -> BusStop:
         return self.bus_stops.get(name, None)
 
+    def get_vertices(self) -> list:
+        return list(self.bus_stops.keys())
+
     def add_edge(self, first_name: str, second_name: str, weight: int) -> None:
         try:
             self.bus_stops[first_name].add_neighbour(second_name, weight)

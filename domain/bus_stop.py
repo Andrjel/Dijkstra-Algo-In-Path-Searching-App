@@ -14,11 +14,10 @@ class BusStop:
         return self.__name
 
     def get_neighbours(self):
-        return self.neighbours.keys()
+        return self.neighbours
 
     def get_weight(self, neighbour: "BusStop"):
         return self.neighbours.get(neighbour, None)
 
     def __str__(self):
-        return self.name + " connected to: " + ", ".join(
-            [stop.name for stop in self.neighbours])
+        return self.name
