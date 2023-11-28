@@ -40,15 +40,24 @@ class Dijkstra:
                 print("Path not reachable")
                 break
         path.insert(0, start)
-        if shortest_distance[end] != infinity:
-            print("Shortest distance is " + str(shortest_distance[end]))
-            print("And the path is " + str(path))
+        return shortest_distance[end], path
+
+    def get_route(self, start, end):
+        shortest_distance: int
+        path = []
+        shortest_distance, path = self.dijkstra(start, end)
+        route = []
+        for stop_name in path:
+            route.append(self.line_map.get_vertex(stop_name).line_num)
+        print(shortest_distance)
+        print(path)
+        print(route)
 
 
 def main():
-    Dijkstra(ConfigLoader.load_config()).dijkstra("Zawadzkiego Kościół", "Turzyn Dworzec")
-    Dijkstra(ConfigLoader.load_config()).dijkstra("Zawadzkiego Kościół", "Plac Rodła")
-    Dijkstra(ConfigLoader.load_config()).dijkstra("Wita Stwosza", "Plac Rodła")
+    Dijkstra(ConfigLoader.load_config()).get_route("Zawadzkiego Kościół", "Turzyn Dworzec")
+    Dijkstra(ConfigLoader.load_config()).get_route("Zawadzkiego Kościół", "Plac Rodła")
+    Dijkstra(ConfigLoader.load_config()).get_route("Wita Stwosza", "Plac Rodła")
 
 
 if __name__ == "__main__":

@@ -7,8 +7,8 @@ class LineMap:
     def __init__(self):
         self.bus_stops: Dict[name, BusStop] = {}
 
-    def add_vertex(self, new_name: str) -> None:
-        self.bus_stops.update({new_name: BusStop(new_name)})
+    def add_vertex(self, new_name: str, line_number: str) -> None:
+        self.bus_stops.update({new_name: BusStop(new_name, line_number)})
 
     def get_vertex(self, name: str) -> BusStop:
         return self.bus_stops.get(name, None)
@@ -16,9 +16,9 @@ class LineMap:
     def get_vertices(self) -> list:
         return list(self.bus_stops.keys())
 
-    def add_edge(self, first_name: str, second_name: str, weight: int) -> None:
+    def add_edge(self, first_name: str, second_name: str, weight: int, line_number: str) -> None:
         try:
-            self.bus_stops[first_name].add_neighbour(second_name, weight)
+            self.bus_stops[first_name].add_neighbour(second_name, weight, line_number)
         except KeyError:
             raise KeyError("Bus stop with name: " + first_name + " doesn't exist")
 
