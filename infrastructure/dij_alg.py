@@ -5,7 +5,7 @@ class Dijkstra:
     def __init__(self, line_map):
         self.line_map = line_map
 
-    def dijkstra(self, start, end):
+    def __dijkstra(self, start, end):
         shortest_distance = {}
         predecessor = {}
         unseen_nodes = self.line_map.get_vertices()
@@ -40,24 +40,67 @@ class Dijkstra:
                 print("Path not reachable")
                 break
         path.insert(0, start)
-        return shortest_distance[end], path
+        return path
 
     def get_route(self, start, end):
-        shortest_distance: int
+        # inicjalizacja zmiennej path
         path = []
-        shortest_distance, path = self.dijkstra(start, end)
+        # wywołanie algorytmu dijkstry
+        path = self.__dijkstra(start, end)
         route = []
+        # zamiana nazw przystanków na numery linii
         for stop_name in path:
             route.append(self.line_map.get_vertex(stop_name).line_num)
-        print(shortest_distance)
-        print(path)
-        print(route)
+        # Wybranie odpowiedniej lini
+        final_route = self.get_final_route(route)
+        # wyliczenie odległości między przystankami
+        path_distance = self.calc_distance(path)
+
+        result = []
+        for idx, stop_name in enumerate(path, start=0):
+            if idx != len(path) - 1:
+                result.append([stop_name, path_distance[idx], final_route[idx]])
+                if idx < len(path) -2 and final_route[idx] != final_route[idx + 1]:
+                    result.append([path[idx + 1], 1, "Przesiadka"])
+                continue
+            result.append([stop_name])
+
+        # print(path_distance)
+        # # print(path)
+        # print(final_route)
+        print(result)
+
+    def calc_distance(self, path):
+        path_distance = []
+        for idx, stop_name in enumerate(path, start=0):
+            if idx == len(path) - 1:
+                break
+            neighbours = self.line_map.get_vertex(stop_name).get_neighbours()
+            for neighbour, weight in neighbours.items():
+                if neighbour.name == path[idx + 1]:
+                    path_distance.append(weight)
+                    break
+        return path_distance
+
+    def get_final_route(self, route):
+        final_route = []
+        for idx, lines_num in enumerate(route, start=0):
+            if idx == len(route) - 1:
+                break
+            for line in lines_num:
+                if line in route[idx + 1]:
+                    final_route.append(line)
+                    break
+        return final_route
 
 
 def main():
     Dijkstra(ConfigLoader.load_config()).get_route("Zawadzkiego Kościół", "Turzyn Dworzec")
     Dijkstra(ConfigLoader.load_config()).get_route("Zawadzkiego Kościół", "Plac Rodła")
     Dijkstra(ConfigLoader.load_config()).get_route("Wita Stwosza", "Plac Rodła")
+    Dijkstra(ConfigLoader.load_config()).get_route("Plac Rodła", "Wita Stwosza")
+    Dijkstra(ConfigLoader.load_config()).get_route("Turkusowa", "Kołłątaja")
+    Dijkstra(ConfigLoader.load_config()).get_route("Plac Rodła", "Podbórz")
 
 
 if __name__ == "__main__":

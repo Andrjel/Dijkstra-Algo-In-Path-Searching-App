@@ -5,6 +5,9 @@ import re
 
 
 class ConfigLoader:
+    """
+    Class which loads bus stops and their neighbours from json files
+    """
     @staticmethod
     def load_config() -> LineMap:
         _line_map = LineMap()
@@ -20,7 +23,7 @@ class ConfigLoader:
                 second_stop = list(data[first_stop].keys())[0]
                 weight = int(data[first_stop][second_stop])
                 if not _line_map.get_vertex(first_stop):
-                    _line_map.add_vertex(first_stop, line_number)
+                    _line_map.add_vertex(first_stop)
                 _line = [first_stop, second_stop, weight, line_number]
                 _line_map.add_edge(*_line)
         return _line_map
