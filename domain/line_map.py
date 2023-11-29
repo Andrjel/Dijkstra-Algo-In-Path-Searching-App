@@ -8,6 +8,7 @@ class LineMap:
     a krawędziami połączenia między nimi. Klasa zawiera słownik, w którym kluczem jest nazwa przystanku,
     a wartością obiekt klasy BusStop, tworząc w ten sposób graf.
     """
+
     def __init__(self):
         self.bus_stops: Dict[name, BusStop] = {}
 

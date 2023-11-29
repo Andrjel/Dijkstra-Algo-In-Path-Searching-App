@@ -6,6 +6,7 @@ class BusStop:
     na nim się zatrzymują oraz słownik sąsiadów, gdzie kluczem jest obiekt BusStop, a wartością waga krawędzi
     pomiędzy tymi przystankami. Przystanek jest węzłem w grafie.
     """
+
     def __init__(self, name: str):
         self.__name = name
         self.__line_num = []
@@ -25,7 +26,7 @@ class BusStop:
         # getter
         return self.__line_num
 
-    def get_neighbours(self) -> Dict[BusStop, int]:
+    def get_neighbours(self) -> Dict["BusStop", int]:
         """Zwraca słownik zawierający sąsiednie przystanki"""
         return self.neighbours
 
@@ -40,4 +41,3 @@ class BusStop:
 
     def __str__(self):
         return self.name
-
